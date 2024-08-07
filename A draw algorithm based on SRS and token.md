@@ -1,23 +1,23 @@
 # A Draw Algorithm Based on SRS and Token
 ## Introduction
-In 1995，the prototype of Art Toys were designed first by independent work studios and designers in Japan and Hong Kong；In 1999,Michael,an cartoonist in Hong Kong, hosted a personal exhibition, in which the 12 inch toys are named "Art Toy"，and the trend started to sweep the city；In 2005,independent work studios and designers of  Art Toy arised in Chinese Mailand;During 2015 and 2016，Art Toy communities、e-commertical platform and certain brands lanched gradually; In 2022,POPMART had IPO in HKEx,Art Toy,as a brand-new business has attacted increasing attention.
+In 1995，the prototype of Art Toys were designed first by independent work studios and designers in Japan and Hong Kong；In 1999,Michael,an cartoonist in Hong Kong, hosted a personal exhibition, in which the 12 inch toys are named "Art Toy"，and the trend started to sweep the city；In 2005,independent work studios and designers of Art Toy arisen in Chinese Mainland;During 2015 and 2016，Art Toy communities、e-commercial platform and certain brands were launched gradually; In 2022,POPMART had IPO in HKEx,Art Toy,as a brand-new business has attracted increasing attention.
 With the growing of Art Toy culture,various playing methods have appeared,such as Platform Toy,Blind Box,Lucky Bag,Ichiban Kuji etc. And Blind Box,Lucky Bag and Ichiban Kuji are specially popular among players for the fun and playfulness,here is the introduction of the history and strategy.
 ### 1. Blind box
-Blind box traces back to Lucky Bagand Capsule Toys originated in Japan,all of which size the the curiosity of consumers,based on the "randomness".Inside the box are toys of different styles,usually composing a 12pcs set. Player will not know what exactly the style is until the box is opened, that means there may be surprise,comparing to the money paid for the box. The price of the toys will not be too high, so  a lot players can afford for it.
+Blind box traces back to Lucky Bagand Capsule Toys originated in Japan,all of which size the the curiosity of consumers,based on the "randomness".Inside the box are toys of different styles,usually composing a 12pcs set. Player will not know what exactly the style is until the box is opened, that means there may be surprise,comparing to the money paid for the box. The price of the toys will not be too high, so lots players can afford for it.
 ### 2. Lucky Bag
-When it comes to the origin of "Lucky Bag", a widely accepted theory is that in the Edo period, on New Year's Day,the Daimaru Kimono(the predecessor fo Daimaru Department Store) put some leftover material of kimono into bags,for sale at a low price.Among the bags, some are filled with kimono belt weaved with golden thread, who buys this kind of bag will be blessed with a whole year's lucky.It stimulated consumption and other shop followed.During the hundred years, Lucky Bag spread out and evolved, now has became the commercial behavior in Japan on New Year's Day. Now in other countries and areas, Lucky Bag is also introduced as a way of sale.  
+When it comes to the origin of "Lucky Bag", a widely accepted theory is that in the Edo period, on New Year's Day,the Daimaru Kimono(the predecessor of Daimaru Department Store) put some leftover material of kimono into bags,for sale at a low price.Among the bags, some are filled with kimono belt weaved with golden thread, who buys this kind of bag will be blessed with a whole year's lucky.It stimulated consumption and other shop followed.During the hundred years, Lucky Bag spread out and evolved, now has became the commercial behavior in Japan on New Year's Day. Now in other countries and areas, Lucky Bag is also introduced as a way of sale.  
 ### 3. Ichiban Kuji
-Ichiban Kuji is invented and issued by Banpre[README.md](README.md)sto, owned by Bandai,one of the most famous comprehensive entertainment enterprises in Japan. The goods contains garage kit,plush toys, groceries,etc.
+Ichiban Kuji is invented and issued by Banpresto, owned by Bandai,one of the most famous comprehensive entertainment enterprises in Japan. The goods contains garage kit,plush toys, groceries,etc.
 ## Simple Random Sampling
 The strategy of Blind Box,Lucky Bag and Ichiban Kuji conform to Simple Random Sampling(SRS) without replacement.A simple random sample is a randomly selected n-size subset of a N-size population. In this sampling method, each member of the population has an exactly equal chance of being selected.
 ## Problems
 With the commercialization of Art Toys,more and more entities involved,meanwhile, some chaotic phenomenas came into existence.
-   1. Some merchants perfom dishonest acts or statements, to obtain improper benefit from consumers.In their independent MiniApp,App and website, fairness,justice and transparentness are corrupted,through many tricks,including modifying probability,specifying winners,reserving high-price goods,no-shipment,absconding with the money,etc.
+   1. Some merchants perform dishonest acts or statements, to obtain improper benefit from consumers.In their independent MiniApp,App and website, fairness,justice and transparent are corrupted,through many tricks,including modifying probability,specifying winners,reserving high-price goods,no-shipment,absconding with the money,etc.
    2. Some consumers also pick the high value goods through experience and technology.
    
-These actions,not only harmed rights and interests of consumers,but also ruined the reputition of merchants in the business.
+These actions,not only harmed rights and interests of consumers,but also ruined the reputation of merchants in the business.
 ## A Draw Algorithm Based on SRS and Token
-   To solve problems above，a draw algorithm based on Simple Random Sampling(SRS) and token is proposed，applicable for Blind box,Lucky Bag and Ichiban Kuji, ensuring fairess,justice and transparentness of the draw progress, and traceability of the result。
+   To solve problems above，a draw algorithm based on Simple Random Sampling(SRS) and token is proposed，applicable for Blind box,Lucky Bag and Ichiban Kuji, ensuring fair,justice and transparent of the draw progress, and traceability of the result。
    The algorithm contains two main parts: creation of token, draw based SRS without replacement.Here is the pseudo code,describing how to create a draw activity composed of N items, and pick M items.
    <br>
 1.Create Token
@@ -29,7 +29,7 @@ These actions,not only harmed rights and interests of consumers,but also ruined 
       i ← i + 1
    end while
 ```
-[1]：The Implementation of UUID algorithm varies in different programming lanuages, in JAVA *UUID.randomUUID()* ，copyright belongs to Oracle Corporation<br>
+[1]：The Implementation of UUID algorithm varies in different programming languages, in JAVA *UUID.randomUUID()* ，copyright belongs to Oracle Corporation<br>
 2.Random Draw
 ```
    Require: M ≥ 1
@@ -44,8 +44,8 @@ These actions,not only harmed rights and interests of consumers,but also ruined 
       j ← j + 1
    end while
 ```
-[1]：The Implementation of Shuflle-of-a-Set Algorithm varies in different programming lanuages, in JAVA *Collections.shuffle(List<?> list)* ，copyright belongs to Oracle Corporation<br>
-[1]：The Implementation of Random Number-Generation Algorithm varies in different programming lanuages, in JAVA *Random.nextInt()* ，copyright belongs to Oracle Corporation<br>
+[1]：The Implementation of Shuflle-of-a-Set Algorithm varies in different programming languages, in JAVA *Collections.shuffle(List<?> list)* ，copyright belongs to Oracle Corporation<br>
+[1]：The Implementation of Random Number-Generation Algorithm varies in different programming languages, in JAVA *Random.nextInt()* ，copyright belongs to Oracle Corporation<br>
 
 
 ## Conclusion
